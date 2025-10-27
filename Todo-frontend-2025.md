@@ -1185,9 +1185,8 @@ git push origin main
 
 
 ## บันทึกรูปผลการ Deploy
-```bash
-# บันทึกรูปผลการ Deploy ที่นี่
-```
+
+![alt text](image.png)
 
 ### ขั้นตอนที่ 10.3: หา URL ของ Website
 
@@ -1216,9 +1215,22 @@ https://your-username.github.io/todo-frontend/
 
 ---
 ## บันทึกรูปผลการรันหน้า Front-end
-```bash
-# บันทึกรูปผลการรันหน้า Front-end ที่นี่
-```
+- #### ✅ หน้าเว็บโหลดได้
+- #### ✅ API Status แสดง "Connected"
+- #### ✅ UI สวยงาม มี animations
+![alt text](image-1.png)
+---
+- #### ✅ เพิ่ม Todo ใหม่ได้
+![alt text](image-2.png)
+---
+- #### ✅ ลบ Todo ได้
+![alt text](image-3.png)
+---
+- #### ✅ Statistics อัพเดทถูกต้อง
+- #### ✅ Toggle Complete/Incomplete ได้
+![alt text](image-4.png)
+![alt text](image-5.png)
+---
 
 ## ส่วนที่ 11: Troubleshooting
 
@@ -1279,6 +1291,7 @@ Access to XMLHttpRequest has been blocked by CORS policy
   background: linear-gradient(to right, #0ea5e9, #10b981);
 }
 ```
+![alt text](image-6.png)
 ---
 
 ## ส่วนที่ 13: สรุปและ Architecture
@@ -1371,41 +1384,41 @@ todo-frontend/
 
 ### Pre-deployment Checklist
 
-- [ ] Node.js 18+ ติดตั้งแล้ว
-- [ ] Git ติดตั้งแล้ว
-- [ ] GitHub Account พร้อม
-- [ ] Backend API ทำงานปกติ
-- [ ] CORS ตั้งค่าถูกต้อง
+- [ ✅ ] Node.js 18+ ติดตั้งแล้ว
+- [ ✅ ] Git ติดตั้งแล้ว
+- [ ✅ ] GitHub Account พร้อม
+- [ ✅ ] Backend API ทำงานปกติ
+- [ ✅ ] CORS ตั้งค่าถูกต้อง
 
 ### Development Checklist
 
-- [ ] สร้างโปรเจกต์ Next.js
-- [ ] ติดตั้ง dependencies ครบ
-- [ ] สร้าง API layer (`src/lib/api.js`)
-- [ ] สร้าง components ทั้ง 3 ตัว
-- [ ] สร้าง main page
-- [ ] แก้ไข styling
-- [ ] ทดสอบ local ผ่าน
+- [ ✅ ] สร้างโปรเจกต์ Next.js
+- [ ✅ ] ติดตั้ง dependencies ครบ
+- [ ✅ ] สร้าง API layer (`src/lib/api.js`)
+- [ ✅ ] สร้าง components ทั้ง 3 ตัว
+- [ ✅ ] สร้าง main page
+- [ ✅ ] แก้ไข styling
+- [ ✅ ] ทดสอบ local ผ่าน
 
 ### Deployment Checklist
 
-- [ ] สร้าง GitHub repository
-- [ ] สร้าง workflow file
-- [ ] ตั้งค่า GitHub Pages
-- [ ] ตั้งค่า workflow permissions
-- [ ] อัพเดท API URL ใน workflow
-- [ ] Push code ไป GitHub
-- [ ] Workflow รันสำเร็จ
-- [ ] Website เข้าถึงได้
-- [ ] ทดสอบ features ครบ
+- [ ✅ ] สร้าง GitHub repository
+- [ ✅ ] สร้าง workflow file
+- [ ✅ ] ตั้งค่า GitHub Pages
+- [ ✅ ] ตั้งค่า workflow permissions
+- [ ✅ ] อัพเดท API URL ใน workflow
+- [ ✅ ] Push code ไป GitHub
+- [ ✅ ] Workflow รันสำเร็จ
+- [ ✅ ] Website เข้าถึงได้
+- [ ✅ ] ทดสอบ features ครบ
 
 ### Testing Checklist
 
-- [ ] เปิดหน้าเว็บได้
-- [ ] API Status เป็น "Connected"
-- [ ] เพิ่ม Todo ได้
-- [ ] ลบ Todo ได้
-- [ ] Statistics แสดงถูกต้อง
+- [ ✅ ] เปิดหน้าเว็บได้
+- [ ✅ ] API Status เป็น "Connected"
+- [ ✅ ] เพิ่ม Todo ได้
+- [ ✅ ] ลบ Todo ได้
+- [ ✅ ] Statistics แสดงถูกต้อง
 
 
 ---
@@ -1413,7 +1426,15 @@ todo-frontend/
 ## ส่วนที่ 15: คำถามท้ายการทดลอง
 
 1. **CI/CD Pipeline**: อธิบายขั้นตอนใน GitHub Actions workflow
+    - เมื่อมีการ push หรือ pull request → Workflow เริ่มทำงาน
+    - ติดตั้ง dependencies (เช่น npm install)
+    - รัน test และ build project
+    - หากสำเร็จ → Deploy ขึ้น environment (เช่น GitHub Pages, server)
+
 2. **CORS**: ทำไม Backend ต้อง enable CORS สำหรับ Frontend
+    - Frontend กับ Backend อาจอยู่คนละ domain/port
+    - Browser จะ block request ข้ามต้นทางเพื่อความปลอดภัย
+    - Backend ต้อง enable CORS เพื่ออนุญาตให้ Frontend ส่ง request ได้
 
 
 ## ส่วนที่ 16: แหล่งข้อมูลเพิ่มเติม
@@ -1443,8 +1464,8 @@ todo-frontend/
 
 ## สรุป
 **URL ของนักศึกษาคือ**:
-- Frontend: `https://your-username.github.io/todo-frontend/`
-- Backend: `https://your-backend.onrender.com`
+- Frontend: [`https://iamtubbe.github.io/todo-frontend/`](https://iamtubbe.github.io/todo-frontend/)
+- Backend: [`https://flask-todo-cicd-p9u0.onrender.com`](https://flask-todo-cicd-p9u0.onrender.com)
 
 ---
 
