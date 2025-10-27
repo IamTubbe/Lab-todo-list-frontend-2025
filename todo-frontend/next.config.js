@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
-const repoName = 'todo-frontend';
+// const repoName = 'todo-frontend'; // Comment out repoName variable
 const nextConfig = {
-  output: 'export',
-  basePath: `/${repoName}`,     // เพิ่ม Base Path
-  assetPrefix: `/${repoName}/`,
+  // output: 'export', // 💡 คอมเมนต์บรรทัดนี้
+  // basePath: `/${repoName}`,     // 💡 คอมเมนต์บรรทัดนี้
+  // assetPrefix: `/${repoName}/`, // 💡 คอมเมนต์บรรทัดนี้
   images: {
     unoptimized: true,
   },
