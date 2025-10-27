@@ -1058,9 +1058,22 @@ npm run dev
 - ✅ UI สวยงาม มี animations
 
 ## บันทึกรูปผลการทดลอง
-```bash
-# บันทึกรูปผลการทดลองที่นี่
-``` 
+- #### ✅ หน้าเว็บโหลดได้
+- #### ✅ API Status แสดง "Connected"
+- #### ✅ UI สวยงาม มี animations
+![alt text](IMG_1.png)
+---
+- #### ✅ เพิ่ม Todo ใหม่ได้
+![alt text](IMG_2.png)
+---
+- #### ✅ ลบ Todo ได้
+![alt text](IMG_3.png)
+---
+- #### ✅ Statistics อัพเดทถูกต้อง
+- #### ✅ Toggle Complete/Incomplete ได้
+![alt text](IMG_4.png)
+![alt text](IMG_5.png)
+---
 
 ### ขั้นตอนที่ 8.4: Test Build
 
